@@ -9,7 +9,7 @@ endif
 let g:hybrid_use_iTerm_colors = 1
 
 " 行番号の色を設定
-hi LineNr ctermbg=0 ctermfg=0
+"hi LineNr ctermbg=0 ctermfg=0"
 hi CursorLineNr ctermbg=4 ctermfg=0
 set cursorline
 hi clear CursorLine
@@ -21,12 +21,7 @@ set ruler
 "about indents
 set autoindent
 set smartindent
-"show 2bytespace"
-augroup highlightIdegraphicSpace
-  autocmd!
- 	autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
-  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
-augroup END
+set wrap
 
 "about tabs
 set tabstop=2
